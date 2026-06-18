@@ -1,5 +1,5 @@
 import { motion } from 'framer-motion'
-import { MapPin, Mail, MessageCircle, Phone } from 'lucide-react'
+import { Clock, MapPin, Mail, MessageCircle, Phone } from 'lucide-react'
 
 import { Button } from '@/components/ui/button'
 import { SITE, WHATSAPP_URL } from '@/lib/constants'
@@ -59,6 +59,16 @@ export function Location() {
                 >
                   {SITE.email}
                 </a>
+              </li>
+
+              <li className="flex gap-4">
+                <Clock className="mt-0.5 size-5 shrink-0 text-gold" />
+                <div>
+                  <p className="text-navy">{SITE.openingHours.label}</p>
+                  <p className="mt-1 text-sm text-navy/70">
+                    Sábado e domingo: {SITE.openingHours.saturday.toLowerCase()}
+                  </p>
+                </div>
               </li>
             </ul>
 

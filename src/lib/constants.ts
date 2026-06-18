@@ -2,9 +2,11 @@ export const SITE = {
   name: 'Advocacia Neves',
   contactLabel: 'Falar conosco',
   tagline: 'Advocacia com escuta ativa e estratégia precisa.',
+  url: 'https://advocacianeves.com.br/',
   phone: '(43) 3323-3109',
   phoneTel: '+554333233109',
   email: 'atendimentoadvocacianeves@gmail.com',
+  instagram: 'https://www.instagram.com/advocaciawneves/',
   address: {
     street: 'Rua Sergipe, nº 829, sala 11',
     neighborhood: 'Centro',
@@ -13,8 +15,18 @@ export const SITE = {
     zip: '86010-380',
     full: 'Rua Sergipe, nº 829, sala 11 — Centro, Londrina/PR',
   },
+  geo: {
+    lat: -23.3099529,
+    lng: -51.1609742,
+  },
+  openingHours: {
+    label: 'Segunda a sexta, 9h às 18h',
+    saturday: 'Fechado',
+    sunday: 'Fechado',
+  },
   mapsUrl:
     'https://www.google.com/maps/dir//Advocacia+Neves+-+R.+Sergipe,+829+-+sala+11+-+Centro,+Londrina+-+PR,+86010-380/data=!4m6!4m5!1m1!4e2!1m2!1m1!1s0x94eb45c13d9d5727:0x4467cdd4a14b962a',
+  googleMapsUrl: 'https://www.google.com/maps?cid=4929134630303143466',
 } as const
 
 export const WHATSAPP_NUMBER = '554333233109'

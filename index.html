@@ -23,28 +23,35 @@
       property="og:description"
       content="Especializada em Direito do Consumidor, Família e Previdenciário. Atendimento no Centro de Londrina. Ligue (43) 3323-3109."
     />
+    <meta property="og:image" content="https://advocacianeves.com.br/hero.jpg" />
+    <meta property="og:image:width" content="1200" />
+    <meta property="og:image:height" content="1500" />
+    <meta property="og:image:alt" content="Escritório Advocacia Neves — Centro, Londrina/PR" />
 
     <!-- Twitter / X -->
-    <meta name="twitter:card" content="summary" />
+    <meta name="twitter:card" content="summary_large_image" />
     <meta name="twitter:title" content="Advocacia Neves | Advogado em Londrina/PR" />
     <meta
       name="twitter:description"
       content="Especializada em Direito do Consumidor, Família e Previdenciário. Atendimento no Centro de Londrina."
     />
+    <meta name="twitter:image" content="https://advocacianeves.com.br/hero.jpg" />
 
     <!-- Favicon -->
     <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
     <link rel="apple-touch-icon" href="/favicon.svg" />
     <meta name="theme-color" content="#0F172A" />
 
-    <!-- JSON-LD: Local Business -->
+    <!-- JSON-LD: Legal Service -->
     <script type="application/ld+json">
       {
         "@context": "https://schema.org",
         "@type": "LegalService",
+        "@id": "https://advocacianeves.com.br/#organization",
         "name": "Advocacia Neves",
         "description": "Escritório de advocacia especializado em Direito do Consumidor, Família e Previdenciário em Londrina/PR.",
         "url": "https://advocacianeves.com.br/",
+        "image": "https://advocacianeves.com.br/hero.jpg",
         "telephone": "+55-43-3323-3109",
         "email": "atendimentoadvocacianeves@gmail.com",
         "address": {
@@ -57,20 +64,23 @@
         },
         "geo": {
           "@type": "GeoCoordinates",
-          "latitude": -23.3103,
-          "longitude": -51.1628
+          "latitude": -23.3099529,
+          "longitude": -51.1609742
         },
         "areaServed": {
           "@type": "City",
           "name": "Londrina"
         },
-        "hasMap": "https://www.google.com/maps/dir//Advocacia+Neves+-+R.+Sergipe,+829+-+sala+11+-+Centro,+Londrina+-+PR,+86010-380",
-        "priceRange": "$$",
+        "hasMap": "https://www.google.com/maps?cid=4929134630303143466",
+        "sameAs": [
+          "https://www.instagram.com/advocaciawneves/",
+          "https://www.google.com/maps?cid=4929134630303143466"
+        ],
         "openingHoursSpecification": [
           {
             "@type": "OpeningHoursSpecification",
             "dayOfWeek": ["Monday", "Tuesday", "Wednesday", "Thursday", "Friday"],
-            "opens": "08:00",
+            "opens": "09:00",
             "closes": "18:00"
           }
         ],
@@ -82,6 +92,56 @@
           "Divórcio",
           "Guarda de filhos",
           "Pensão alimentícia"
+        ]
+      }
+    </script>
+
+    <!-- JSON-LD: FAQ -->
+    <script type="application/ld+json">
+      {
+        "@context": "https://schema.org",
+        "@type": "FAQPage",
+        "mainEntity": [
+          {
+            "@type": "Question",
+            "name": "Como funciona a primeira consulta?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Você entra em contato pelo WhatsApp ou telefone com um resumo do caso. Avaliamos as informações iniciais e orientamos sobre os próximos passos, prazos e documentos necessários."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "Quanto custa contratar um advogado?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Os honorários variam conforme a complexidade do caso. Após a análise inicial, apresentamos as opções de forma transparente, sem surpresas."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "Quanto tempo dura um processo?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Depende da área e da instância judicial. Na primeira análise, explicamos uma estimativa realista e mantemos você informado em cada etapa."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "Onde fica o escritório?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Estamos na Rua Sergipe, nº 829, sala 11, no Centro de Londrina/PR. Você pode ver a localização e traçar a rota pelo Google Maps."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "Que documentos preciso trazer?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Varia por caso: contratos, comprovantes, laudos, decisões anteriores ou documentos do INSS. Na primeira conversa, enviamos uma lista objetiva do que será útil."
+            }
+          }
         ]
       }
     </script>
