@@ -8,11 +8,11 @@ export function Hero() {
   return (
     <section
       id="hero"
-      className="relative overflow-hidden bg-navy pt-24 text-white sm:pt-28"
+      className="relative overflow-hidden bg-navy pt-16 text-white sm:pt-20"
     >
       <div className="noise-overlay pointer-events-none absolute inset-0" />
 
-      <div className="relative mx-auto grid max-w-7xl items-end gap-10 px-4 py-16 sm:px-6 lg:grid-cols-[1fr_420px] lg:items-center lg:gap-16 lg:px-8 lg:py-24">
+      <div className="relative mx-auto grid max-w-7xl items-end gap-8 px-4 pb-12 pt-4 sm:px-6 sm:pb-14 sm:pt-6 lg:grid-cols-[1fr_420px] lg:items-center lg:gap-12 lg:px-8 lg:pb-16 lg:pt-8">
         {/* Text */}
         <div>
           <motion.h1
@@ -38,7 +38,7 @@ export function Hero() {
             initial={{ opacity: 0, y: 16 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.5, delay: 0.25 }}
-            className="mt-8"
+            className="mt-6"
           >
             <Button asChild size="lg">
               <a href={WHATSAPP_URL} target="_blank" rel="noreferrer">
