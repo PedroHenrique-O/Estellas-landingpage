@@ -71,10 +71,11 @@ export function Hero() {
 
             <div className="relative overflow-hidden rounded-[1.75rem]">
               <img
-                src="https://images.unsplash.com/photo-1450101499163-c8848c66ca85?auto=format&fit=crop&w=800&q=80"
+                src={`${import.meta.env.BASE_URL}hero.jpg`}
                 alt="Mesa de trabalho — escritório de advocacia"
                 className="aspect-[4/5] w-full object-cover"
                 loading="eager"
+                decoding="async"
               />
               {/* Subtle dark overlay at bottom for depth */}
               <div className="absolute inset-0 bg-gradient-to-t from-navy/60 via-transparent to-transparent" />
