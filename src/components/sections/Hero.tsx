@@ -13,7 +13,6 @@ export function Hero() {
       <div className="noise-overlay pointer-events-none absolute inset-0" />
 
       <div className="relative mx-auto grid max-w-7xl items-end gap-8 px-4 pb-12 pt-4 sm:px-6 sm:pb-14 sm:pt-6 lg:grid-cols-[1fr_420px] lg:items-center lg:gap-12 lg:px-8 lg:pb-16 lg:pt-8">
-        {/* Text */}
         <div>
           <motion.h1
             initial={{ opacity: 0, y: 20 }}
@@ -21,8 +20,8 @@ export function Hero() {
             transition={{ duration: 0.55 }}
             className="text-balance font-heading text-4xl leading-[1.05] text-white sm:text-5xl lg:text-6xl"
           >
-            Advocacia em Londrina especializada em Consumidor, Família e
-            Previdenciário.
+            Advocacia Neves — especializada em Consumidor, Família e
+            Previdenciário em Londrina.
           </motion.h1>
 
           <motion.p
@@ -31,7 +30,8 @@ export function Hero() {
             transition={{ duration: 0.5, delay: 0.15 }}
             className="mt-5 max-w-lg text-base leading-relaxed text-white/65 sm:text-lg"
           >
-            Seus direitos têm peso. A sua defesa também.
+            Escritório no Centro de Londrina. Seus direitos têm peso — sua
+            defesa também.
           </motion.p>
 
           <motion.div
@@ -58,26 +58,26 @@ export function Hero() {
           </motion.p>
         </div>
 
-        {/* Image */}
         <motion.div
           initial={{ opacity: 0, x: 20 }}
           animate={{ opacity: 1, x: 0 }}
           transition={{ duration: 0.65, delay: 0.2 }}
-          className="hidden lg:block"
+          className="lg:block"
         >
           <div className="relative">
-            {/* Gold accent square behind */}
-            <div className="absolute -bottom-4 -right-4 h-full w-full rounded-[1.75rem] border border-gold/25" />
+            <div className="absolute -bottom-4 -right-4 hidden h-full w-full rounded-[1.75rem] border border-gold/25 lg:block" />
 
             <div className="relative overflow-hidden rounded-[1.75rem]">
               <img
                 src={`${import.meta.env.BASE_URL}hero.jpg`}
-                alt="Mesa de trabalho — escritório de advocacia"
-                className="aspect-[4/5] w-full object-cover"
+                alt="Advocacia Neves — escritório de advocacia no Centro de Londrina/PR"
+                width={800}
+                height={534}
+                className="aspect-video w-full object-cover lg:aspect-[4/5]"
                 loading="eager"
                 decoding="async"
+                fetchPriority="high"
               />
-              {/* Subtle dark overlay at bottom for depth */}
               <div className="absolute inset-0 bg-gradient-to-t from-navy/60 via-transparent to-transparent" />
             </div>
           </div>

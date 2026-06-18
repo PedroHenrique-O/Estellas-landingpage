@@ -28,7 +28,7 @@ export function Header() {
     >
       <div className="mx-auto flex h-16 max-w-7xl items-center justify-between px-4 sm:h-18 sm:px-6 lg:px-8">
         {/* Logo */}
-        <a href="#" className="group flex flex-col shrink-0">
+        <a href="#hero" className="group flex flex-col shrink-0">
           <span className="font-heading text-lg tracking-tight text-white sm:text-xl">
             {SITE.name}
           </span>

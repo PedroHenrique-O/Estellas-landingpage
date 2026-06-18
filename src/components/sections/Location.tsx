@@ -1,5 +1,5 @@
 import { motion } from 'framer-motion'
-import { Clock, MapPin, Mail, MessageCircle, Phone } from 'lucide-react'
+import { Clock, ExternalLink, MapPin, Mail, MessageCircle, Phone } from 'lucide-react'
 
 import { Button } from '@/components/ui/button'
 import { SITE, WHATSAPP_URL } from '@/lib/constants'
@@ -14,11 +14,22 @@ export function Location() {
               Localização
             </p>
             <h2 className="mt-4 font-heading text-3xl leading-tight sm:text-4xl">
-              Estamos no Centro de Londrina.
+              Escritório Advocacia Neves no Centro de Londrina.
             </h2>
             <p className="mt-4 max-w-md text-base leading-relaxed text-navy/70">
-              Atendimento no escritório, com fácil acesso no coração da cidade.
+              {SITE.address.full}, CEP {SITE.address.zip}. Atendimento presencial
+              de {SITE.openingHours.label.toLowerCase()}. Sábado e domingo
+              fechado.
             </p>
+            <a
+              href={SITE.googleMapsUrl}
+              target="_blank"
+              rel="noreferrer"
+              className="mt-4 inline-flex items-center gap-2 text-sm font-medium text-gold transition-colors hover:text-gold-hover"
+            >
+              <ExternalLink className="size-4" />
+              Ver perfil no Google Maps
+            </a>
           </div>
 
           <motion.div
@@ -74,11 +85,7 @@ export function Location() {
 
             <div className="mt-8 flex flex-col gap-3 sm:flex-row">
               <Button asChild className="flex-1">
-                <a
-                  href={SITE.mapsUrl}
-                  target="_blank"
-                  rel="noreferrer"
-                >
+                <a href={SITE.mapsUrl} target="_blank" rel="noreferrer">
                   <MapPin className="size-4" />
                   Como chegar
                 </a>
@@ -93,6 +100,24 @@ export function Location() {
             </div>
           </motion.div>
         </div>
+
+        <motion.div
+          initial={{ opacity: 0, y: 20 }}
+          whileInView={{ opacity: 1, y: 0 }}
+          viewport={{ once: true, margin: '-60px' }}
+          transition={{ duration: 0.5, delay: 0.1 }}
+          className="mt-12 overflow-hidden rounded-[1.75rem] border border-navy/10"
+        >
+          <iframe
+            title="Localização Advocacia Neves no Google Maps"
+            src={SITE.mapsEmbedUrl}
+            width="100%"
+            height="360"
+            loading="lazy"
+            referrerPolicy="no-referrer-when-downgrade"
+            className="block w-full border-0"
+          />
+        </motion.div>
       </div>
     </section>
   )
