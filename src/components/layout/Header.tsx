@@ -28,11 +28,20 @@ export function Header() {
     >
       <div className="mx-auto flex h-16 max-w-7xl items-center justify-between px-4 sm:h-18 sm:px-6 lg:px-8">
         {/* Logo */}
-        <a href="#hero" className="group flex flex-col shrink-0">
-          <span className="font-heading text-lg tracking-tight text-white sm:text-xl">
-            {SITE.name}
+        <a href="#hero" className="group flex shrink-0 items-center gap-2.5">
+          <img
+            src={`${import.meta.env.BASE_URL}logo.png`}
+            alt=""
+            width={40}
+            height={45}
+            className="h-9 w-auto object-contain sm:h-10"
+          />
+          <span className="flex flex-col">
+            <span className="font-heading text-lg tracking-tight text-white sm:text-xl">
+              {SITE.name}
+            </span>
+            <span className="mt-1 h-px w-8 bg-gold transition-all duration-300 group-hover:w-14" />
           </span>
-          <span className="mt-1 h-px w-8 bg-gold transition-all duration-300 group-hover:w-14" />
         </a>
 
         {/* Desktop nav */}

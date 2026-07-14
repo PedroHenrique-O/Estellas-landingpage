@@ -12,7 +12,7 @@ export function Hero() {
     >
       <div className="noise-overlay pointer-events-none absolute inset-0" />
 
-      <div className="relative mx-auto grid max-w-7xl items-end gap-8 px-4 pb-12 pt-4 sm:px-6 sm:pb-14 sm:pt-6 lg:grid-cols-[1fr_420px] lg:items-center lg:gap-12 lg:px-8 lg:pb-16 lg:pt-8">
+      <div className="relative mx-auto grid max-w-7xl items-center gap-10 px-4 pb-12 pt-4 sm:px-6 sm:pb-14 sm:pt-6 lg:grid-cols-[1fr_380px] lg:gap-12 lg:px-8 lg:pb-16 lg:pt-8">
         <div>
           <motion.h1
             initial={{ opacity: 0, y: 20 }}
@@ -59,27 +59,26 @@ export function Hero() {
         </div>
 
         <motion.div
-          initial={{ opacity: 0, x: 20 }}
-          animate={{ opacity: 1, x: 0 }}
+          initial={{ opacity: 0, scale: 0.96 }}
+          animate={{ opacity: 1, scale: 1 }}
           transition={{ duration: 0.65, delay: 0.2 }}
-          className="lg:block"
+          className="flex justify-center lg:justify-end"
         >
-          <div className="relative">
-            <div className="absolute -bottom-4 -right-4 hidden h-full w-full rounded-[1.75rem] border border-gold/25 lg:block" />
-
-            <div className="relative overflow-hidden rounded-[1.75rem]">
-              <img
-                src={`${import.meta.env.BASE_URL}hero.jpg`}
-                alt="Advocacia Neves — escritório de advocacia no Centro de Londrina/PR"
-                width={800}
-                height={534}
-                className="aspect-video w-full object-cover lg:aspect-[4/5]"
-                loading="eager"
-                decoding="async"
-                fetchPriority="high"
-              />
-              <div className="absolute inset-0 bg-gradient-to-t from-navy/60 via-transparent to-transparent" />
-            </div>
+          <div className="relative flex size-52 items-center justify-center sm:size-64 lg:size-80">
+            <div
+              aria-hidden
+              className="absolute inset-0 rounded-full bg-cream/95 shadow-[0_0_0_1px_rgba(201,162,39,0.25)]"
+            />
+            <img
+              src={`${import.meta.env.BASE_URL}logo.png`}
+              alt="Logotipo Advocacia Neves"
+              width={720}
+              height={803}
+              className="relative z-10 h-auto w-[68%] object-contain"
+              loading="eager"
+              decoding="async"
+              fetchPriority="high"
+            />
           </div>
         </motion.div>
       </div>
